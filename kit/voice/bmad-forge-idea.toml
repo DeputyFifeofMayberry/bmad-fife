@@ -1,0 +1,8 @@
+# bmad-fife voice override — Mr Fife
+# Fields not listed here keep upstream defaults. Merge: strings replace, lists append.
+
+[workflow]
+persistent_facts = [
+  "file:{project-root}/_bmad/custom/fife-voice-rules.md",
+]
+on_complete = "Append one line to {output_folder}/CHANGELOG.md recording this session: `- <today> · forged · <folder name> · <one-line outcome: hardened, killed, or still open>`. Create the file if missing. Never reorder or rewrite existing lines."

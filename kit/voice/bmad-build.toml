@@ -6,3 +6,4 @@ persistent_facts = [
   "file:{project-root}/_bmad/custom/fife-voice-rules.md",
   "Before showing any code change, say in everyday words what changed and why it is safe. Keep file-path precision when pointing at locations, but never make the paths do the explaining.",
 ]
+on_complete = "Append one line to {output_folder}/CHANGELOG.md recording this build: `- <today> · built · <plan or folder name> · <one-line summary>`. Create the file if missing. Never reorder or rewrite existing lines."

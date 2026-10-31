@@ -15,3 +15,4 @@ external_sources = [
 ]
 
 audience = "Plain-language register for an educated reader who is not a software engineer: define specialist terms the first time they appear, one concrete example over abstraction, no unexplained jargon or vendor marketing."
+on_complete = "Append one line to {output_folder}/CHANGELOG.md recording this run: `- <today> · researched · <run folder name> · <one-line summary of the decision served>`. Create the file if missing. Never reorder or rewrite existing lines."
