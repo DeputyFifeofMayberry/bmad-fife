@@ -25,6 +25,9 @@ writing."
    ALL-CAPS, no "every. single. word." styling.
 10. Sentence length varies because the content varies. A fragment is earned
     by meaning, never styled for rhythm.
+11. No framed economy language. Choices don't "buy" or "cost" you things;
+    say what you get and what you'd have to deal with. No rhetorical
+    weighing ("worth more to you").
 
 ## The habit instead
 
