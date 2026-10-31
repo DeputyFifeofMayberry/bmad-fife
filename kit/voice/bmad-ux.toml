@@ -3,7 +3,7 @@
 
 [workflow]
 persistent_facts = [
-  "Write for an educated reader who is not a software engineer: define specialist terms the first time they appear, prefer one concrete example over abstraction, and explain in everyday language without talking down.",
+  "file:{project-root}/_bmad/custom/fife-voice-rules.md",
   "Describe designs concretely: what the user sees and does, step by step; every choice names the user need it serves.",
 ]
 doc_standards = [

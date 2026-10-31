@@ -3,6 +3,6 @@
 
 [workflow]
 persistent_facts = [
-  "Write for an educated reader who is not a software engineer: define specialist terms the first time they appear, prefer one concrete example over abstraction, and explain in everyday language without talking down.",
+  "file:{project-root}/_bmad/custom/fife-voice-rules.md",
   "Before showing any code change, say in everyday words what changed and why it is safe. Keep file-path precision when pointing at locations, but never make the paths do the explaining.",
 ]

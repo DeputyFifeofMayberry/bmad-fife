@@ -1,0 +1,17 @@
+# bmad-fife web-access certainty — Mr Fife
+# Declares this environment's real web channels so deep-recon never spends a
+# run discovering them. Shipped skill says "check, don't assume" at the plan
+# gate; this override makes it "known".
+
+[workflow]
+persistent_facts = [
+  "file:{project-root}/_bmad/custom/fife-voice-rules.md",
+  "This harness (pi) has no built-in web-search tool and no search MCP servers installed. The only web channels are bash + curl (curl 8.x, verified working) and the authenticated gh CLI. Do not spend tool calls discovering web capability — it is already known.",
+]
+
+external_sources = [
+  "curl via bash (no dedicated web tool in this harness): general web access — fetch pages with `curl -sL --max-time 30 <url>`, sample large pages with `| head -c 4000`, probe with `curl -sI`; web search via the DuckDuckGo HTML endpoint (https://duckduckgo.com/html/?q=<query>), parse result links defensively, fall back to querying likely sites directly when it blocks",
+  "gh CLI (authenticated as DeputyFifeofMayberry): GitHub-hosted evidence — `gh search code`, `gh search repos`, `gh api`; preferred surface for anything about open-source projects, their code, releases, and issue history",
+]
+
+audience = "Plain-language register for an educated reader who is not a software engineer: define specialist terms the first time they appear, one concrete example over abstraction, no unexplained jargon or vendor marketing."

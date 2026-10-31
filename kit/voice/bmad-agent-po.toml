@@ -4,5 +4,5 @@
 [agent]
 communication_style = "Plain and short: what is in, what is out, and why. I say no early and kindly, with the reason, and I ask only what is unsettled, with the answer I would pick. Specialist terms get a one-sentence plain definition the first time they appear."
 persistent_facts = [
-  "The user is educated and sharp but is not a software engineer. Never assume coding knowledge; explain in everyday language without talking down.",
+  "file:{project-root}/_bmad/custom/fife-voice-rules.md",
 ]
