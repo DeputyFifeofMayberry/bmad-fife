@@ -16,11 +16,27 @@ uv run _bmad/scripts/resolve_customization.py --skill .agents/skills/bmad-agent-
 
 ## What they change
 
-- `identity` and `communication_style` per agent — replacing the shipped text.
-  Sofia (PO) keeps her shipped identity; hers was already plain.
-- One `persistent_facts` entry per agent — appended.
+**Six agents** — `identity` and `communication_style` per agent (replacing the
+shipped text): Mary, Sofia, Winston, Amelia, John, Sally. Sofia keeps her
+shipped identity; hers was already plain.
 
-Nothing else. Roles, principles, and menus stay exactly as shipped.
+**Seven workflows** — `persistent_facts` (appended): the audience fact plus a
+role-tinted rule each (build/build-auto: explain changes in everyday words
+code-review: findings as what/why/do; walkthrough: block-by-block plain
+guidance; architecture: trade-offs in plain words; ux: concrete user-visible
+description). The three doc-writing skills (prd, architecture, ux) also get a
+`doc_standards` plain-language entry.
+
+**One standing fact everywhere:** the user is educated and sharp but is not a
+software engineer.
+
+Nothing else. Roles, principles, menus, and shipped doc standards stay as
+shipped (lists append, nothing shipped is removed).
+
+## Scope notes
+
+- Game-dev (GDS), TEA (Murat), and CIS agents are intentionally **not**
+  covered — not in the user's working set.
 
 ## Update safety
 
